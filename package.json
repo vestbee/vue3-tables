@@ -1,0 +1,55 @@
+{
+  "name": "vue3-tables",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build": "cross-env NODE_ENV=production vite build",
+    "postbuild": "rimraf ./dist/types/dev ./dist/types/src/entry.d.ts",
+    "prebuild": "rimraf ./dist"
+  },
+  "main": "dist/vue3-tables.es.js",
+  "module": "dist/vue3-tables.umd.js",
+  "browser": "dist/vue3-tables.es.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
+    "@heroicons/vue": "^1.0.6",
+    "@types/lodash": "^4.14.182",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "@vitejs/plugin-vue-jsx": "^1.3.10",
+    "@vue/compiler-sfc": "^3.2.33",
+    "autoprefixer": "^10.4.7",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.2.10",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.4",
+    "vite": "^2.9.7",
+    "vite-svg-loader": "^3.3.0",
+    "vue": "^3.0.0",
+    "vue-cli-plugin-tailwind": "~3.0.0"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "classnames": "^2.3.1",
+    "lodash": "^4.17.21",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "vue-demi": "^0.12.5"
+  }
+}
