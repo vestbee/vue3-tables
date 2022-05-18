@@ -9,7 +9,10 @@
     "postbuild": "rimraf ./dist/types/dev ./dist/types/src/entry.d.ts",
     "prebuild": "rimraf ./dist"
   },
-  "git": "https://github.com/vestbee/vue3-tables",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vestbee/vue3-tables.git"
+  },
   "main": "dist/vue3-tables.es.js",
   "module": "dist/vue3-tables.umd.js",
   "browser": "dist/vue3-tables.es.js",
